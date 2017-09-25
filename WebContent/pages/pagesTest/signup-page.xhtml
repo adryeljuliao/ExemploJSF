@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+	<title>Exemplo JSF Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Bootstrap -->
+	<link href="../../resources/bootstrap/css/bootstrap.min.css"
+		rel="stylesheet" />
+	<!-- styles -->
+	<link href="../../resources/css/styles.css" rel="stylesheet" />
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</h:head>
+<h:body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Logo -->
+					<div class="logo">
+						<h1>
+							<a href="#">EXEMPLO JSF LOGIN</a>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-content container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="login-wrapper">
+					<div class="box">
+						<div class="content-wrap">
+							<h6>Sign Up</h6>
+							<h:form>
+								<h:inputText class="form-control" type="text"
+									a:placeholder="E-mail address" />
+
+								<h:inputText class="form-control" type="password"
+									a:placeholder="Password" />
+
+								<h:inputText class="form-control" type="password"
+									a:placeholder="Confirm Password" />
+
+								<h:button class="btn btn-primary singup" value="Cadastrar" />
+							</h:form>
+						</div>
+					</div>
+
+					<div class="already">
+						<p>Já possui uma conta?</p>
+						<a href="login-page.xhtml">Logar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../resources/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../resources/js/custom.js"></script>
+</h:body>
+</html>
